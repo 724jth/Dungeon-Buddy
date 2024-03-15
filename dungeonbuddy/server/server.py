@@ -2,8 +2,8 @@ from flask import Flask
 from flask_restful import Resource, Api
 from flask_cors import CORS
 
-from api.utils import *
-from api.creatures import *
+from dungeonbuddy.server.db.utils import *
+from dungeonbuddy.server.db.EncounterElements import *
 
 app = Flask(__name__) #create Flask instance
 CORS(app) #Enable CORS on Flask server to work with Nodejs pages
